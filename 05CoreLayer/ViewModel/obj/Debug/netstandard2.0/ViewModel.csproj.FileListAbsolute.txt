@@ -1,8 +1,0 @@
-/home/rudresh/Personal/OpenSourceProjects/DynamicProject/05CoreLayer/ViewModel/bin/Debug/netstandard2.0/ViewModel.deps.json
-/home/rudresh/Personal/OpenSourceProjects/DynamicProject/05CoreLayer/ViewModel/bin/Debug/netstandard2.0/ViewModel.dll
-/home/rudresh/Personal/OpenSourceProjects/DynamicProject/05CoreLayer/ViewModel/bin/Debug/netstandard2.0/ViewModel.pdb
-/home/rudresh/Personal/OpenSourceProjects/DynamicProject/05CoreLayer/ViewModel/obj/Debug/netstandard2.0/ViewModel.csproj.CoreCompileInputs.cache
-/home/rudresh/Personal/OpenSourceProjects/DynamicProject/05CoreLayer/ViewModel/obj/Debug/netstandard2.0/ViewModel.AssemblyInfoInputs.cache
-/home/rudresh/Personal/OpenSourceProjects/DynamicProject/05CoreLayer/ViewModel/obj/Debug/netstandard2.0/ViewModel.AssemblyInfo.cs
-/home/rudresh/Personal/OpenSourceProjects/DynamicProject/05CoreLayer/ViewModel/obj/Debug/netstandard2.0/ViewModel.dll
-/home/rudresh/Personal/OpenSourceProjects/DynamicProject/05CoreLayer/ViewModel/obj/Debug/netstandard2.0/ViewModel.pdb

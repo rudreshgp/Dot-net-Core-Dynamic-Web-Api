@@ -1,8 +1,0 @@
-/home/rudresh/Personal/OpenSourceProjects/DynamicProject/03BusinessLogicLayer/DynamicProject.BusinesManager/bin/Debug/netstandard2.0/DynamicProject.BusinesManager.deps.json
-/home/rudresh/Personal/OpenSourceProjects/DynamicProject/03BusinessLogicLayer/DynamicProject.BusinesManager/bin/Debug/netstandard2.0/DynamicProject.BusinesManager.dll
-/home/rudresh/Personal/OpenSourceProjects/DynamicProject/03BusinessLogicLayer/DynamicProject.BusinesManager/bin/Debug/netstandard2.0/DynamicProject.BusinesManager.pdb
-/home/rudresh/Personal/OpenSourceProjects/DynamicProject/03BusinessLogicLayer/DynamicProject.BusinesManager/obj/Debug/netstandard2.0/DynamicProject.BusinesManager.csproj.CoreCompileInputs.cache
-/home/rudresh/Personal/OpenSourceProjects/DynamicProject/03BusinessLogicLayer/DynamicProject.BusinesManager/obj/Debug/netstandard2.0/DynamicProject.BusinesManager.AssemblyInfoInputs.cache
-/home/rudresh/Personal/OpenSourceProjects/DynamicProject/03BusinessLogicLayer/DynamicProject.BusinesManager/obj/Debug/netstandard2.0/DynamicProject.BusinesManager.AssemblyInfo.cs
-/home/rudresh/Personal/OpenSourceProjects/DynamicProject/03BusinessLogicLayer/DynamicProject.BusinesManager/obj/Debug/netstandard2.0/DynamicProject.BusinesManager.dll
-/home/rudresh/Personal/OpenSourceProjects/DynamicProject/03BusinessLogicLayer/DynamicProject.BusinesManager/obj/Debug/netstandard2.0/DynamicProject.BusinesManager.pdb
