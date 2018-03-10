@@ -1,13 +1,15 @@
 ﻿using System;
 using System.Collections.Generic;
 using Microsoft.AspNetCore.Mvc;
-using ViewModel;
+using DynamicProject.ViewModel;
 
 namespace DynamicProject.BusinesService
 {
+    ///All webapi controllers should be attached to view model
     [Route("api/[controller]")]
     public class DynamicController<T>  : Controller where T:BaseViewModel, new()
     {
+
         [HttpGet]
         public IEnumerable<T> Get()=> new List<T>
         {

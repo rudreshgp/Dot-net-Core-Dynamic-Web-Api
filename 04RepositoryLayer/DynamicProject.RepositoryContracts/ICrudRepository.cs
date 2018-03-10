@@ -2,7 +2,8 @@
 
 namespace DynamicProject.RepositoryContracts
 {
-    public class Class1
+    public interface ICrudRepository
     {
+        
     }
 }

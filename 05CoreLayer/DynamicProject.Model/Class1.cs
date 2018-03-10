@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace DynamicProject.BusinesManager
+namespace DynamicProject.Model
 {
     public class Class1
     {

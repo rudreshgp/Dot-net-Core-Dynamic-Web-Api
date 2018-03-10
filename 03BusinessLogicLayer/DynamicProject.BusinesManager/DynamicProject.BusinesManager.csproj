@@ -1,5 +1,11 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
+  <ItemGroup>
+    <ProjectReference Include="..\DynamicProject.BusinesManagerContracts\DynamicProject.BusinesManagerContracts.csproj" />
+    <ProjectReference Include="..\..\05CoreLayer\DynamicProject.ViewModel\DynamicProject.ViewModel.csproj" />
+    <ProjectReference Include="..\..\04RepositoryLayer\DynamicProject.RepositoryContracts\DynamicProject.RepositoryContracts.csproj" />
+  </ItemGroup>
+
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
   </PropertyGroup>

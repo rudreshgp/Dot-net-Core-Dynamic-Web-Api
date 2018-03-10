@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace ViewModel
+namespace DynamicProject.ViewModel
 {
     public class UserViewModel : BaseViewModel
     {
@@ -9,8 +9,6 @@ namespace ViewModel
         {
             this.Name = "User";
         }
-
-        public int Id {get;set;}
 
         public string Name {get;set;}
 

@@ -23,7 +23,8 @@
     <ProjectReference Include="..\..\03BusinessLogicLayer\DynamicProject.BusinesManagerContracts\DynamicProject.BusinesManagerContracts.csproj" />
     <ProjectReference Include="..\..\04RepositoryLayer\DynamicProject.Repository\DynamicProject.Repository.csproj" />
     <ProjectReference Include="..\..\04RepositoryLayer\DynamicProject.RepositoryContracts\DynamicProject.RepositoryContracts.csproj" />
-    <ProjectReference Include="..\..\05CoreLayer\ViewModel\ViewModel.csproj" />
+    <ProjectReference Include="..\..\05CoreLayer\DynamicProject.ViewModel\DynamicProject.ViewModel.csproj" />
+    <ProjectReference Include="..\..\05CoreLayer\DynamicProject.Model\DynamicProject.Model.csproj" />
   </ItemGroup>
 
 </Project>
