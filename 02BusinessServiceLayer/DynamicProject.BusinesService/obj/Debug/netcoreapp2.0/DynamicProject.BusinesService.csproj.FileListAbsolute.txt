@@ -1,0 +1,8 @@
+/home/rudresh/Personal/OpenSourceProjects/DynamicProject/02BusinessServiceLayer/DynamicProject.BusinesService/obj/Debug/netcoreapp2.0/DynamicProject.BusinesService.csproj.CoreCompileInputs.cache
+/home/rudresh/Personal/OpenSourceProjects/DynamicProject/02BusinessServiceLayer/DynamicProject.BusinesService/obj/Debug/netcoreapp2.0/DynamicProject.BusinesService.AssemblyInfoInputs.cache
+/home/rudresh/Personal/OpenSourceProjects/DynamicProject/02BusinessServiceLayer/DynamicProject.BusinesService/obj/Debug/netcoreapp2.0/DynamicProject.BusinesService.AssemblyInfo.cs
+/home/rudresh/Personal/OpenSourceProjects/DynamicProject/02BusinessServiceLayer/DynamicProject.BusinesService/bin/Debug/netcoreapp2.0/DynamicProject.BusinesService.deps.json
+/home/rudresh/Personal/OpenSourceProjects/DynamicProject/02BusinessServiceLayer/DynamicProject.BusinesService/bin/Debug/netcoreapp2.0/DynamicProject.BusinesService.dll
+/home/rudresh/Personal/OpenSourceProjects/DynamicProject/02BusinessServiceLayer/DynamicProject.BusinesService/bin/Debug/netcoreapp2.0/DynamicProject.BusinesService.pdb
+/home/rudresh/Personal/OpenSourceProjects/DynamicProject/02BusinessServiceLayer/DynamicProject.BusinesService/obj/Debug/netcoreapp2.0/DynamicProject.BusinesService.dll
+/home/rudresh/Personal/OpenSourceProjects/DynamicProject/02BusinessServiceLayer/DynamicProject.BusinesService/obj/Debug/netcoreapp2.0/DynamicProject.BusinesService.pdb

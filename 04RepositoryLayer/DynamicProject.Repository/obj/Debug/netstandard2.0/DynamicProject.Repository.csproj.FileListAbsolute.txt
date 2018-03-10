@@ -1,0 +1,8 @@
+/home/rudresh/Personal/OpenSourceProjects/DynamicProject/04RepositoryLayer/DynamicProject.Repository/bin/Debug/netstandard2.0/DynamicProject.Repository.deps.json
+/home/rudresh/Personal/OpenSourceProjects/DynamicProject/04RepositoryLayer/DynamicProject.Repository/bin/Debug/netstandard2.0/DynamicProject.Repository.dll
+/home/rudresh/Personal/OpenSourceProjects/DynamicProject/04RepositoryLayer/DynamicProject.Repository/bin/Debug/netstandard2.0/DynamicProject.Repository.pdb
+/home/rudresh/Personal/OpenSourceProjects/DynamicProject/04RepositoryLayer/DynamicProject.Repository/obj/Debug/netstandard2.0/DynamicProject.Repository.csproj.CoreCompileInputs.cache
+/home/rudresh/Personal/OpenSourceProjects/DynamicProject/04RepositoryLayer/DynamicProject.Repository/obj/Debug/netstandard2.0/DynamicProject.Repository.AssemblyInfoInputs.cache
+/home/rudresh/Personal/OpenSourceProjects/DynamicProject/04RepositoryLayer/DynamicProject.Repository/obj/Debug/netstandard2.0/DynamicProject.Repository.AssemblyInfo.cs
+/home/rudresh/Personal/OpenSourceProjects/DynamicProject/04RepositoryLayer/DynamicProject.Repository/obj/Debug/netstandard2.0/DynamicProject.Repository.dll
+/home/rudresh/Personal/OpenSourceProjects/DynamicProject/04RepositoryLayer/DynamicProject.Repository/obj/Debug/netstandard2.0/DynamicProject.Repository.pdb

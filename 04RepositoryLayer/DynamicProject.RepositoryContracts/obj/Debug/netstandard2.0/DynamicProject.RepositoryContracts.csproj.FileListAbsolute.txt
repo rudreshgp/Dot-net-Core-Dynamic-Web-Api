@@ -1,0 +1,8 @@
+/home/rudresh/Personal/OpenSourceProjects/DynamicProject/04RepositoryLayer/DynamicProject.RepositoryContracts/bin/Debug/netstandard2.0/DynamicProject.RepositoryContracts.deps.json
+/home/rudresh/Personal/OpenSourceProjects/DynamicProject/04RepositoryLayer/DynamicProject.RepositoryContracts/bin/Debug/netstandard2.0/DynamicProject.RepositoryContracts.dll
+/home/rudresh/Personal/OpenSourceProjects/DynamicProject/04RepositoryLayer/DynamicProject.RepositoryContracts/bin/Debug/netstandard2.0/DynamicProject.RepositoryContracts.pdb
+/home/rudresh/Personal/OpenSourceProjects/DynamicProject/04RepositoryLayer/DynamicProject.RepositoryContracts/obj/Debug/netstandard2.0/DynamicProject.RepositoryContracts.csproj.CoreCompileInputs.cache
+/home/rudresh/Personal/OpenSourceProjects/DynamicProject/04RepositoryLayer/DynamicProject.RepositoryContracts/obj/Debug/netstandard2.0/DynamicProject.RepositoryContracts.AssemblyInfoInputs.cache
+/home/rudresh/Personal/OpenSourceProjects/DynamicProject/04RepositoryLayer/DynamicProject.RepositoryContracts/obj/Debug/netstandard2.0/DynamicProject.RepositoryContracts.AssemblyInfo.cs
+/home/rudresh/Personal/OpenSourceProjects/DynamicProject/04RepositoryLayer/DynamicProject.RepositoryContracts/obj/Debug/netstandard2.0/DynamicProject.RepositoryContracts.dll
+/home/rudresh/Personal/OpenSourceProjects/DynamicProject/04RepositoryLayer/DynamicProject.RepositoryContracts/obj/Debug/netstandard2.0/DynamicProject.RepositoryContracts.pdb
