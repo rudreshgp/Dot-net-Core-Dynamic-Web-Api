@@ -25,6 +25,16 @@
         "build": {
           "build/netstandard2.0/NETStandard.Library.targets": {}
         }
+      },
+      "DynamicProject.ViewModel/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.0",
+        "compile": {
+          "bin/placeholder/DynamicProject.ViewModel.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/DynamicProject.ViewModel.dll": {}
+        }
       }
     }
   },
@@ -169,10 +179,16 @@
         "netstandard.library.2.0.1.nupkg.sha512",
         "netstandard.library.nuspec"
       ]
+    },
+    "DynamicProject.ViewModel/1.0.0": {
+      "type": "project",
+      "path": "../../05CoreLayer/DynamicProject.ViewModel/DynamicProject.ViewModel.csproj",
+      "msbuildProject": "../../05CoreLayer/DynamicProject.ViewModel/DynamicProject.ViewModel.csproj"
     }
   },
   "projectFileDependencyGroups": {
     ".NETStandard,Version=v2.0": [
+      "DynamicProject.ViewModel >= 1.0.0",
       "NETStandard.Library >= 2.0.1"
     ]
   },
@@ -203,7 +219,11 @@
       },
       "frameworks": {
         "netstandard2.0": {
-          "projectReferences": {}
+          "projectReferences": {
+            "/home/rudresh/Personal/OpenSourceProjects/DynamicProject/05CoreLayer/DynamicProject.ViewModel/DynamicProject.ViewModel.csproj": {
+              "projectPath": "/home/rudresh/Personal/OpenSourceProjects/DynamicProject/05CoreLayer/DynamicProject.ViewModel/DynamicProject.ViewModel.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

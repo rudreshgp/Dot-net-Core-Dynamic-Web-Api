@@ -4750,6 +4750,11 @@
       "DynamicProject.BusinesManager/1.0.0": {
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
+        "dependencies": {
+          "DynamicProject.BusinesManagerContracts": "1.0.0",
+          "DynamicProject.RepositoryContracts": "1.0.0",
+          "DynamicProject.ViewModel": "1.0.0"
+        },
         "compile": {
           "bin/placeholder/DynamicProject.BusinesManager.dll": {}
         },
@@ -4760,6 +4765,9 @@
       "DynamicProject.BusinesManagerContracts/1.0.0": {
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
+        "dependencies": {
+          "DynamicProject.ViewModel": "1.0.0"
+        },
         "compile": {
           "bin/placeholder/DynamicProject.BusinesManagerContracts.dll": {}
         },
@@ -4771,8 +4779,9 @@
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
-          "Microsoft.AspNetCore.Mvc": "2.0.0",
-          "ViewModel": "1.0.0"
+          "DynamicProject.BusinesServiceContracts": "1.0.0",
+          "DynamicProject.ViewModel": "1.0.0",
+          "Microsoft.AspNetCore.Mvc": "2.0.0"
         },
         "compile": {
           "bin/placeholder/DynamicProject.BusinesService.dll": {}
@@ -4789,6 +4798,16 @@
         },
         "runtime": {
           "bin/placeholder/DynamicProject.BusinesServiceContracts.dll": {}
+        }
+      },
+      "DynamicProject.Model/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.0",
+        "compile": {
+          "bin/placeholder/DynamicProject.Model.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/DynamicProject.Model.dll": {}
         }
       },
       "DynamicProject.Repository/1.0.0": {
@@ -4811,14 +4830,14 @@
           "bin/placeholder/DynamicProject.RepositoryContracts.dll": {}
         }
       },
-      "ViewModel/1.0.0": {
+      "DynamicProject.ViewModel/1.0.0": {
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
         "compile": {
-          "bin/placeholder/ViewModel.dll": {}
+          "bin/placeholder/DynamicProject.ViewModel.dll": {}
         },
         "runtime": {
-          "bin/placeholder/ViewModel.dll": {}
+          "bin/placeholder/DynamicProject.ViewModel.dll": {}
         }
       }
     }
@@ -12621,6 +12640,11 @@
       "path": "../../02BusinessServiceLayer/DynamicProject.BusinesServiceContracts/DynamicProject.BusinesServiceContracts.csproj",
       "msbuildProject": "../../02BusinessServiceLayer/DynamicProject.BusinesServiceContracts/DynamicProject.BusinesServiceContracts.csproj"
     },
+    "DynamicProject.Model/1.0.0": {
+      "type": "project",
+      "path": "../../05CoreLayer/DynamicProject.Model/DynamicProject.Model.csproj",
+      "msbuildProject": "../../05CoreLayer/DynamicProject.Model/DynamicProject.Model.csproj"
+    },
     "DynamicProject.Repository/1.0.0": {
       "type": "project",
       "path": "../../04RepositoryLayer/DynamicProject.Repository/DynamicProject.Repository.csproj",
@@ -12631,10 +12655,10 @@
       "path": "../../04RepositoryLayer/DynamicProject.RepositoryContracts/DynamicProject.RepositoryContracts.csproj",
       "msbuildProject": "../../04RepositoryLayer/DynamicProject.RepositoryContracts/DynamicProject.RepositoryContracts.csproj"
     },
-    "ViewModel/1.0.0": {
+    "DynamicProject.ViewModel/1.0.0": {
       "type": "project",
-      "path": "../../05CoreLayer/ViewModel/ViewModel.csproj",
-      "msbuildProject": "../../05CoreLayer/ViewModel/ViewModel.csproj"
+      "path": "../../05CoreLayer/DynamicProject.ViewModel/DynamicProject.ViewModel.csproj",
+      "msbuildProject": "../../05CoreLayer/DynamicProject.ViewModel/DynamicProject.ViewModel.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -12643,11 +12667,12 @@
       "DynamicProject.BusinesManagerContracts >= 1.0.0",
       "DynamicProject.BusinesService >= 1.0.0",
       "DynamicProject.BusinesServiceContracts >= 1.0.0",
+      "DynamicProject.Model >= 1.0.0",
       "DynamicProject.Repository >= 1.0.0",
       "DynamicProject.RepositoryContracts >= 1.0.0",
+      "DynamicProject.ViewModel >= 1.0.0",
       "Microsoft.AspNetCore.All >= 2.0.5",
-      "Microsoft.NETCore.App >= 2.0.0",
-      "ViewModel >= 1.0.0"
+      "Microsoft.NETCore.App >= 2.0.0"
     ]
   },
   "packageFolders": {
@@ -12696,8 +12721,11 @@
             "/home/rudresh/Personal/OpenSourceProjects/DynamicProject/04RepositoryLayer/DynamicProject.RepositoryContracts/DynamicProject.RepositoryContracts.csproj": {
               "projectPath": "/home/rudresh/Personal/OpenSourceProjects/DynamicProject/04RepositoryLayer/DynamicProject.RepositoryContracts/DynamicProject.RepositoryContracts.csproj"
             },
-            "/home/rudresh/Personal/OpenSourceProjects/DynamicProject/05CoreLayer/ViewModel/ViewModel.csproj": {
-              "projectPath": "/home/rudresh/Personal/OpenSourceProjects/DynamicProject/05CoreLayer/ViewModel/ViewModel.csproj"
+            "/home/rudresh/Personal/OpenSourceProjects/DynamicProject/05CoreLayer/DynamicProject.ViewModel/DynamicProject.ViewModel.csproj": {
+              "projectPath": "/home/rudresh/Personal/OpenSourceProjects/DynamicProject/05CoreLayer/DynamicProject.ViewModel/DynamicProject.ViewModel.csproj"
+            },
+            "/home/rudresh/Personal/OpenSourceProjects/DynamicProject/05CoreLayer/DynamicProject.Model/DynamicProject.Model.csproj": {
+              "projectPath": "/home/rudresh/Personal/OpenSourceProjects/DynamicProject/05CoreLayer/DynamicProject.Model/DynamicProject.Model.csproj"
             }
           }
         }

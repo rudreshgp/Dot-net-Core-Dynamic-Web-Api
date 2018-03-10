@@ -25,6 +25,39 @@
         "build": {
           "build/netstandard2.0/NETStandard.Library.targets": {}
         }
+      },
+      "DynamicProject.BusinesManagerContracts/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.0",
+        "dependencies": {
+          "DynamicProject.ViewModel": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/DynamicProject.BusinesManagerContracts.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/DynamicProject.BusinesManagerContracts.dll": {}
+        }
+      },
+      "DynamicProject.RepositoryContracts/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.0",
+        "compile": {
+          "bin/placeholder/DynamicProject.RepositoryContracts.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/DynamicProject.RepositoryContracts.dll": {}
+        }
+      },
+      "DynamicProject.ViewModel/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.0",
+        "compile": {
+          "bin/placeholder/DynamicProject.ViewModel.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/DynamicProject.ViewModel.dll": {}
+        }
       }
     }
   },
@@ -169,10 +202,28 @@
         "netstandard.library.2.0.1.nupkg.sha512",
         "netstandard.library.nuspec"
       ]
+    },
+    "DynamicProject.BusinesManagerContracts/1.0.0": {
+      "type": "project",
+      "path": "../DynamicProject.BusinesManagerContracts/DynamicProject.BusinesManagerContracts.csproj",
+      "msbuildProject": "../DynamicProject.BusinesManagerContracts/DynamicProject.BusinesManagerContracts.csproj"
+    },
+    "DynamicProject.RepositoryContracts/1.0.0": {
+      "type": "project",
+      "path": "../../04RepositoryLayer/DynamicProject.RepositoryContracts/DynamicProject.RepositoryContracts.csproj",
+      "msbuildProject": "../../04RepositoryLayer/DynamicProject.RepositoryContracts/DynamicProject.RepositoryContracts.csproj"
+    },
+    "DynamicProject.ViewModel/1.0.0": {
+      "type": "project",
+      "path": "../../05CoreLayer/DynamicProject.ViewModel/DynamicProject.ViewModel.csproj",
+      "msbuildProject": "../../05CoreLayer/DynamicProject.ViewModel/DynamicProject.ViewModel.csproj"
     }
   },
   "projectFileDependencyGroups": {
     ".NETStandard,Version=v2.0": [
+      "DynamicProject.BusinesManagerContracts >= 1.0.0",
+      "DynamicProject.RepositoryContracts >= 1.0.0",
+      "DynamicProject.ViewModel >= 1.0.0",
       "NETStandard.Library >= 2.0.1"
     ]
   },
@@ -203,7 +254,17 @@
       },
       "frameworks": {
         "netstandard2.0": {
-          "projectReferences": {}
+          "projectReferences": {
+            "/home/rudresh/Personal/OpenSourceProjects/DynamicProject/03BusinessLogicLayer/DynamicProject.BusinesManagerContracts/DynamicProject.BusinesManagerContracts.csproj": {
+              "projectPath": "/home/rudresh/Personal/OpenSourceProjects/DynamicProject/03BusinessLogicLayer/DynamicProject.BusinesManagerContracts/DynamicProject.BusinesManagerContracts.csproj"
+            },
+            "/home/rudresh/Personal/OpenSourceProjects/DynamicProject/05CoreLayer/DynamicProject.ViewModel/DynamicProject.ViewModel.csproj": {
+              "projectPath": "/home/rudresh/Personal/OpenSourceProjects/DynamicProject/05CoreLayer/DynamicProject.ViewModel/DynamicProject.ViewModel.csproj"
+            },
+            "/home/rudresh/Personal/OpenSourceProjects/DynamicProject/04RepositoryLayer/DynamicProject.RepositoryContracts/DynamicProject.RepositoryContracts.csproj": {
+              "projectPath": "/home/rudresh/Personal/OpenSourceProjects/DynamicProject/04RepositoryLayer/DynamicProject.RepositoryContracts/DynamicProject.RepositoryContracts.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
