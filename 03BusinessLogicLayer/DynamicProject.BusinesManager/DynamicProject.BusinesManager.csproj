@@ -3,6 +3,7 @@
   <ItemGroup>
     <ProjectReference Include="..\DynamicProject.BusinesManagerContracts\DynamicProject.BusinesManagerContracts.csproj" />
     <ProjectReference Include="..\..\05CoreLayer\DynamicProject.ViewModel\DynamicProject.ViewModel.csproj" />
+    <ProjectReference Include="..\..\05CoreLayer\DynamicProject.Model\DynamicProject.Model.csproj" />
     <ProjectReference Include="..\..\04RepositoryLayer\DynamicProject.RepositoryContracts\DynamicProject.RepositoryContracts.csproj" />
   </ItemGroup>
 

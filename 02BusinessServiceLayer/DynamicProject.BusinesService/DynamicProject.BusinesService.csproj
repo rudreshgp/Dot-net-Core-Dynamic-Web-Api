@@ -7,7 +7,8 @@
     <PackageReference Include="Microsoft.AspNetCore.Mvc" Version="2.0.0" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\02BusinessServiceLayer\DynamicProject.BusinesServiceContracts\DynamicProject.BusinesServiceContracts.csproj" />
+    <ProjectReference Include="..\..\03BusinessLogicLayer\DynamicProject.BusinesManagerContracts\DynamicProject.BusinesManagerContracts.csproj" />
     <ProjectReference Include="..\..\05CoreLayer\DynamicProject.ViewModel\DynamicProject.ViewModel.csproj" />
+    <ProjectReference Include="..\..\05CoreLayer\DynamicProject.Model\DynamicProject.Model.csproj" />
    </ItemGroup>
 </Project>

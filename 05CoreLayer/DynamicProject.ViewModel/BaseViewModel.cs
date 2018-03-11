@@ -16,8 +16,8 @@ namespace DynamicProject.ViewModel
         public DateTime CreatedAt {get;set;}
 
         ///Resource last modified by
-        public string LastModifiedBy {get;set;}
+        public string ModifiedBy {get;set;}
         ///Resource last modified at 
-        public DateTime? LastModifiedAt {get;set;}
+        public DateTime? ModifiedAt {get;set;}
     }
 }

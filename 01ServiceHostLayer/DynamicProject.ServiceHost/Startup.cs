@@ -3,7 +3,11 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Reflection;
 using System.Threading.Tasks;
+using DynamicProject.BusinesManager;
+using DynamicProject.BusinesManagerContracts;
 using DynamicProject.BusinesService;
+using DynamicProject.Repository;
+using DynamicProject.RepositoryContracts;
 using DynamicProject.ServiceHost.ConfigurationHelpers;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
@@ -34,6 +38,8 @@ namespace DynamicProject.ServiceHost
 
                     manager.ApplicationParts.Add(new AssemblyPart(typeof(DynamicProject.BusinesService.Empty).Assembly));
                 });
+                services.AddTransient(typeof(ICrudRepository<>),typeof(CrudRepository<>));
+                services.AddTransient(typeof(IBusinessManager<,>),typeof(BusinessManager<,>));
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

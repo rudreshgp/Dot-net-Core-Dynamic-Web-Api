@@ -5,13 +5,17 @@ using DynamicProject.ViewModel.Helper;
 namespace DynamicProject.BusinesManagerContracts
 {
     ///Create Base business manager
-    public interface IBaseBusinessManager<TViewModel,TModel> where TViewModel:class ,new() where TModel:class,new()
+    public interface IBusinessManager<TViewModel,TModel> where TViewModel:class ,new() where TModel:class,new()
     {        
         ///Get all items in the table
-        TableListViewModel<TViewModel> GetAll();
+        List<TViewModel> GetAll();
 
         ///Get all items with some search condition
-        TableListViewModel<TViewModel> GetAll(SearchParameterViewModel searchParameters);
+        List<TViewModel> GetAll(SearchParameterViewModel searchParameters);
+
+
+        ///create new object and return the same
+        TViewModel Create(TViewModel newObject);
 
         ///Get object by Id
         TViewModel Get(int id);
