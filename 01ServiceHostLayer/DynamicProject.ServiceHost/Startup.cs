@@ -7,11 +7,13 @@ using DynamicProject.BusinesManager;
 using DynamicProject.BusinesManagerContracts;
 using DynamicProject.BusinesService;
 using DynamicProject.Repository;
+using DynamicProject.Repository.Helper;
 using DynamicProject.RepositoryContracts;
 using DynamicProject.ServiceHost.ConfigurationHelpers;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Mvc.ApplicationParts;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
@@ -38,6 +40,9 @@ namespace DynamicProject.ServiceHost
 
                     manager.ApplicationParts.Add(new AssemblyPart(typeof(DynamicProject.BusinesService.Empty).Assembly));
                 });
+                var conString = Configuration.GetConnectionString("DefaultConnection");
+                services.AddDbContext<ApplicationContext>(options=>options.UseSqlServer(conString));
+                // services.AddTransient(typeof(DbContextFactory),typeof(IDbContextFactory<ApplicationContext>));
                 services.AddTransient(typeof(ICrudRepository<>),typeof(CrudRepository<>));
                 services.AddTransient(typeof(IBusinessManager<,>),typeof(BusinessManager<,>));
         }
