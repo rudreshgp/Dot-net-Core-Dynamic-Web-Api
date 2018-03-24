@@ -18,17 +18,29 @@ namespace DynamicProject.BusinesService
         }
 
         [HttpGet]
-        public IEnumerable<TViewModel> Get()=> new List<TViewModel>
+        public IEnumerable<TViewModel> GetAll()
         {
-            //TODO: Call Business Logic
-            new TViewModel()  
-        };
+            try
+            {
+                return _businessManager.GetAll();
+            }
+            catch(Exception ex)
+            {
+                    throw;
+            }
+        }
 
         [HttpPost]
-        public bool Create([FromBody] TViewModel input)
+        public TViewModel Create([FromBody] TViewModel input)
         {
-            //....
-            return true;
+            try
+            {
+                return _businessManager.Create(input);
+            }
+            catch(Exception ex)
+            {
+                    throw;
+            }
         }
 
     }

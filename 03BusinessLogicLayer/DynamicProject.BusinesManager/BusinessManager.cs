@@ -28,6 +28,7 @@ namespace DynamicProject.BusinesManager
         }
         public TViewModel Create(TViewModel newObject)
         {
+            //TODO:Auto mapper
             var createdObject = _repository.Create(new TModel());
             // ((BaseViewModel)newObject).Id = createdObject.Id;
             return newObject;

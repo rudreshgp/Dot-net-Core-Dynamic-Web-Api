@@ -5,7 +5,7 @@ using Microsoft.EntityFrameworkCore;
 namespace DynamicProject.Repository.Helper
 {
 
-      public interface IDomainModelContext
+    public interface IDomainModelContext
     {
         #region Master Tables
         /// <summary>

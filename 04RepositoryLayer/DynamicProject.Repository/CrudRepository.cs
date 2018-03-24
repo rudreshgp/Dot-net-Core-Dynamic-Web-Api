@@ -4,33 +4,35 @@ using System.Linq;
 using DynamicProject.Model;
 using DynamicProject.Repository.Helper;
 using DynamicProject.RepositoryContracts;
+using Microsoft.EntityFrameworkCore;
+
 namespace DynamicProject.Repository
 {
     public class CrudRepository<TModel> : ICrudRepository<TModel> where TModel : BaseModel
     {
-        private static List<TModel> _tempList =new List<TModel>();
-
-        public CrudRepository(ApplicationContext dbContextFactory)
+        private DbContext _applicationContex;
+        private DbSet<TModel> _table;
+        public CrudRepository( IDbContextFactory<IDomainModelContext> dbContextFactory)
         {
-            
+            _applicationContex = dbContextFactory.DbContext;
+            _table = dbContextFactory.Set<TModel>();
         }
 
         public TModel Create(TModel model)
         {
-            // throw new NotImplementedException();
-            _tempList.Add(model);
-            model.Id = _tempList.Count;
-            return model;
+           var newRecord = _table.Add(model).Entity;
+           _applicationContex.SaveChanges();
+           return newRecord;
         }
 
         public TModel Get(int id)
         {
-            return _tempList.FirstOrDefault(x=>x.Id==id);
+            return _table.Find(id);
         }
 
         public List<TModel> GetAll()
         {
-            return _tempList;
+            return _table.ToList();
         }
     }
 }

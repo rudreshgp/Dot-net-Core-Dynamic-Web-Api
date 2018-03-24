@@ -42,7 +42,7 @@ namespace DynamicProject.ServiceHost
                 });
                 var conString = Configuration.GetConnectionString("DefaultConnection");
                 services.AddDbContext<ApplicationContext>(options=>options.UseSqlServer(conString));
-                // services.AddTransient(typeof(DbContextFactory),typeof(IDbContextFactory<ApplicationContext>));
+                services.AddTransient(typeof(IDbContextFactory<IDomainModelContext>),typeof(DbContextFactory));
                 services.AddTransient(typeof(ICrudRepository<>),typeof(CrudRepository<>));
                 services.AddTransient(typeof(IBusinessManager<,>),typeof(BusinessManager<,>));
         }
