@@ -22,7 +22,7 @@ namespace DynamicProject.Repository.Helper
         // public DbSet<Role> Roles{get;set;}
         public ApplicationContext(DbContextOptions<ApplicationContext> options):base(options)
         {
-            
+            Database.EnsureCreated();
         }
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {

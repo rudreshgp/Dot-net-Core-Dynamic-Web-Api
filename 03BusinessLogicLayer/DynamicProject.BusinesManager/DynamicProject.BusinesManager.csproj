@@ -7,6 +7,10 @@
     <ProjectReference Include="..\..\04RepositoryLayer\DynamicProject.RepositoryContracts\DynamicProject.RepositoryContracts.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="6.2.2" />
+  </ItemGroup>
+
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
   </PropertyGroup>

@@ -1,5 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Threading.Tasks;
+using AutoMapper;
 using DynamicProject.BusinesManagerContracts;
 using DynamicProject.Model;
 using DynamicProject.RepositoryContracts;
@@ -15,8 +17,16 @@ namespace DynamicProject.BusinesManager
         {
             _repository = repository;
         }
+        static BusinessManager()
+        {
+            Mapper.Initialize(x=>
+            {
+                x.CreateMap<TViewModel,TModel>();
+                x.CreateMap<TModel,TViewModel>();
+            }            );
+        }
         ///Get all items in the table
-        public List<TViewModel> GetAll()
+        public async Task<List<TViewModel>> GetAll()
         {
             var objects =  _repository.GetAll();
             var responseList = new List<TViewModel>();
@@ -29,8 +39,11 @@ namespace DynamicProject.BusinesManager
         public TViewModel Create(TViewModel newObject)
         {
             //TODO:Auto mapper
-            var createdObject = _repository.Create(new TModel());
+            var model = Mapper.Map<TViewModel,TModel>(newObject);
+            this.MapAuditColumns(model);
+            model = _repository.Create(model);
             // ((BaseViewModel)newObject).Id = createdObject.Id;
+            newObject = Mapper.Map<TModel,TViewModel>(model);
             return newObject;
         }
 
@@ -57,6 +70,21 @@ namespace DynamicProject.BusinesManager
         public bool Delete(List<int> ids)
         {
             throw new NotImplementedException();
+        }
+        private void MapAuditColumns(TModel model)
+        {
+            
+            var baseModel = model as BaseModel;
+            if(baseModel!=null)
+            {
+                if(baseModel.Id==0)
+                {
+                    baseModel.CreatedAt = DateTime.UtcNow;
+                    baseModel.CreatedBy ="";
+                }
+                baseModel.ModifiedAt = DateTime.UtcNow;
+                baseModel.ModifiedBy = "";
+            }
         }
     }
 }

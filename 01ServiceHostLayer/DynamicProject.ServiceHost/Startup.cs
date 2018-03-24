@@ -42,9 +42,9 @@ namespace DynamicProject.ServiceHost
                 });
                 var conString = Configuration.GetConnectionString("DefaultConnection");
                 services.AddDbContext<ApplicationContext>(options=>options.UseSqlServer(conString));
-                services.AddTransient(typeof(IDbContextFactory<IDomainModelContext>),typeof(DbContextFactory));
-                services.AddTransient(typeof(ICrudRepository<>),typeof(CrudRepository<>));
-                services.AddTransient(typeof(IBusinessManager<,>),typeof(BusinessManager<,>));
+                services.AddScoped<IDbContextFactory<IDomainModelContext>,DbContextFactory>();
+                services.AddScoped(typeof(ICrudRepository<>),typeof(CrudRepository<>));
+                services.AddScoped(typeof(IBusinessManager<,>),typeof(BusinessManager<,>));
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

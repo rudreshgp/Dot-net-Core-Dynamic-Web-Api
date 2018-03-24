@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Threading.Tasks;
 using DynamicProject.ViewModel.Helper;
 
 namespace DynamicProject.BusinesManagerContracts
@@ -8,7 +9,7 @@ namespace DynamicProject.BusinesManagerContracts
     public interface IBusinessManager<TViewModel,TModel> where TViewModel:class ,new() where TModel:class,new()
     {        
         ///Get all items in the table
-        List<TViewModel> GetAll();
+        Task<List<TViewModel>> GetAll();
 
         ///Get all items with some search condition
         List<TViewModel> GetAll(SearchParameterViewModel searchParameters);

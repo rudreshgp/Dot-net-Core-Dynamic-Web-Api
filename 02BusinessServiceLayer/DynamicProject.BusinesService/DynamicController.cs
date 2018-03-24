@@ -4,6 +4,7 @@ using Microsoft.AspNetCore.Mvc;
 using DynamicProject.ViewModel;
 using DynamicProject.Model;
 using DynamicProject.BusinesManagerContracts;
+using System.Threading.Tasks;
 
 namespace DynamicProject.BusinesService
 {
@@ -16,13 +17,13 @@ namespace DynamicProject.BusinesService
         {
             _businessManager = businessManager;
         }
-
+        
         [HttpGet]
-        public IEnumerable<TViewModel> GetAll()
+        public async Task<IEnumerable<TViewModel>> GetAll()
         {
             try
             {
-                return _businessManager.GetAll();
+                return await _businessManager.GetAll();
             }
             catch(Exception ex)
             {
